@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/adjustPanFragment"
+    tools:ignore="UnusedNavigation">
+    <fragment
+        android:id="@+id/adjustPanFragment"
+        android:name="com.brunotmgomes.example.AdjustPanFragment"
+        android:label="fragment_adjust_pan"
+        tools:layout="@layout/fragment_adjust_pan" />
+    <fragment
+        android:id="@+id/adjustResizeFragment"
+        android:name="com.brunotmgomes.example.AdjustResizeFragment"
+        android:label="fragment_adjust_resize"
+        tools:layout="@layout/fragment_adjust_resize" />
+    <action android:id="@+id/action_global_adjustPanFragment" app:destination="@id/adjustPanFragment" />
+    <action android:id="@+id/action_global_adjustResizeFragment" app:destination="@id/adjustResizeFragment" />
+</navigation>

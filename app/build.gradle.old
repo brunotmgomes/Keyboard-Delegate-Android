@@ -29,7 +29,7 @@ android {
 
 dependencies {
     def nav_version = "2.3.0-alpha06"
-    api project(path: ':keyboarddelegate')
+    implementation project(path: ':keyboarddelegate', configuration: 'default')
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
